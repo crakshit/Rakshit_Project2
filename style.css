@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(img/Background.jpg);
+    background-color: #f8be02;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: #f8be02;
+    padding: 1em;
+}
+
+#logo{
+    padding-left: 3em;
+}
+
+nav{
+    float: right;
+    padding-top: 0.5em;
+}
+
+nav a{
+    padding: 0 3em 0 0;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000;
+}
+
+#wrapper{
+/*
+    background-color: #f8be02;
+    min-width: 900px;
+*/
+    max-width: 1280px;
+/*    box-shadow: 5px 5px #4d4d4d;*/
+    margin: auto;
+}
+
+/* End of Navigation */
+
+main{
+    min-height: 600px;
+}
+
+
+.main-text{
+    padding: 10% 5% 0 35%;
+}
+
+.main-text h1{
+    text-transform: uppercase;
+    font-size: 2.3em;
+    letter-spacing: 0.09em;
+    word-spacing: 0.23em;
+}
+
+.main-text p{
+    padding: 1.2em 0;
+    line-height: 1.5em;
+}
+
+.main-text h3{
+    font-size: 1.3em;
+}
+/* Button Pendind*/
+/* End of Main */
+
+.services{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container{
+    display: inline-block;
+    width: 30%;
+    min-height: 500px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px #606060;
+    
+}
+
+.photo{
+    padding: 30px 5px;
+}
+
+.photo img{
+    width: 90%;
+    border-radius: 5px
+}
+
+.description{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.description .title{
+    padding: 10px 0;
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.description .text{
+    text-align: justify;
+    font-size: 0.9em;
+    line-height: 130%;
+}
+
+
+/* Start of Why (Table) */
+
+.insights .content{
+    margin: 4% auto 0 auto;
+    text-align: center;
+    
+}
+
+.insights .content h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 0.07em;
+    word-spacing: 0.2em;
+    padding-bottom: 2%
+}
+
+.insights .content p{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+#para{
+    display: block;
+    padding: 1% 0;
+}
+
+#world{
+    font-weight: bold;
+}
+
+#para a{
+    color: inherit;    
+}
+.table-data{
+    margin: 2% 0;
+}
+
+.table-data table{
+    width: 80%;
+    margin: auto;
+}
+
+.table-data th{
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.table-data tr{
+    text-align: center;
+}
+
+.table-data td, .table-data th{
+    padding: 1%;
+    border: 1px solid #000;
+}
+
+/* End of Why (Table) */
+
+footer{
+    display: inline-block;
+}
+
+.footer-logo img{
+    width: 50%;
+}
+
+
+/*  Responsive at 1024px  */
+
+@media screen and (max-width: 1024px){
+    
+    body{
+        background-image: none;
+    }
+    
+    #logo{
+        padding: 0;
+        display: block;
+        margin: auto
+    }
+    nav{
+        float: none;
+        padding: 1em 0 0 0;
+        text-align: center;
+    }
+    nav a{
+        padding: 2em;
+    }
+    
+    /* End of Navigation */
+    
+    
+    .main-text{
+        padding: 5%;
+    }
+    
+    /*End of Main @1024*/
+    
+    .services{
+        
+    }
+    
+    .container{
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    /*  Insights start @1024*/
+/*
+    .insights .content p{
+        
+    }
+*/
+}
+
+
+
+
+
+
+/*  Responsive at 768px  */
+
+@media screen and (max-width: 768px){
+    
+
+    nav{
+        float: none;
+        padding: 1em 0 0 0;
+    }
+    
+    nav a{
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+    #logo{
+        padding: 0;
+    }
+    #logo img{
+        display: block;
+        margin: auto
+    }
+    
+    /* End of Navigation */
+    
+    
+    /* Start of Why (Table) */
+
+    .table-data table, .table-data thead, .table-data tbody, .table-data th, .table-data td, .table-data tr {
+        display: block;
+    }
+    
+
+    .table-data table{
+        margin: 5% auto 10% auto;
+    }
+
+
+    .table-data thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .table-data tr{
+        border-right: 1px solid #000;
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        margin-bottom: 15px;
+    }
+    
+    .table-data td{
+        border:  none;
+        border-bottom: 1px solid #000;
+        position: relative;
+        padding-left: 50%;
+    }
+    
+    .table-data td::before{
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+/*        border-right: 1px solid #555;*/
+
+    }
+    
+    .table-data td:nth-of-type(1)::before{
+        content: "Year"
+    }
+    .table-data td:nth-of-type(2)::before{
+        content: "Facebook"
+    }
+    .table-data td:nth-of-type(3)::before{
+        content: "YouTube"
+    }
+    .table-data td:nth-of-type(4)::before{
+        content: "Twitter"
+    }
+    .table-data td:nth-of-type(5)::before{
+        content: "Instagram"
+    }
+    .table-data td:nth-of-type(6)::before{
+        content: "WeChat"
+    }
+    .table-data td:nth-of-type(7)::before{
+        content: "Google+"
+    }
+
+    /* End of Why (Table) */
+    
+}
