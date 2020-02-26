@@ -36,6 +36,10 @@ nav a{
     color: #000;
 }
 
+nav a:hover{
+    color: #eee;
+}
+
 #wrapper{
 /*
     background-color: #f8be02;
@@ -174,6 +178,7 @@ main{
 
 #world{
     font-weight: bold;
+    background-color: #ACE4CF;
 }
 
 #para a{
@@ -194,6 +199,11 @@ main{
     width: 80%;
     margin: auto;
     border-collapse: collapse;
+    caption-side: bottom;
+}
+
+.table-data table caption{
+    padding: 5px;
 }
 
 .table-data th{
@@ -237,7 +247,7 @@ footer{
     margin-top: 0;
 }
 .footer-logo img{
-    width: 30%;
+    width: 200px;
     padding-bottom: 10px;
 }
 .footer-logo p{
@@ -246,6 +256,9 @@ footer{
 }
 .footer-logo p span{
     display: block;
+}
+.footer-text{
+    padding-top: 10px;
 }
 .footer-text p{
     font-size: 80%;
@@ -256,9 +269,19 @@ footer{
     text-decoration: none;
 }
 
-.footer-social img{
-    width: 40px;
-    padding: 5px;
+.footer-social a{
+    color: inherit;
+}
+.footer-social a i{
+    font-size: 40px;
+    padding: 6px;
+    margin: 2px;
+}
+
+.footer-social i:hover{
+    padding: 0px;
+    font-size: 46px;
+    color: #eee;
 }
 
 
@@ -287,7 +310,9 @@ footer{
     
     /* End of Navigation */
     
-    
+    main{
+        min-height: auto;
+    }
     .main-text{
         padding: 5%;
     }
@@ -309,12 +334,18 @@ footer{
         margin-bottom: 30px;
     }
     
-    /*  Insights start @1024*/
-/*
-    .insights .content p{
-        
+    .footer-logo img{
+        width: 160px;
     }
-*/
+    
+    /*  Insights start @1024*/
+    .insights .content{
+        margin-top: 40px;
+    }
+    
+    .table-data table{
+        font-size: 80%;
+    }
 }
 
 
@@ -358,6 +389,7 @@ footer{
 
     .table-data table{
         margin: 5% auto 10% auto;
+        font-size: 100%;
     }
 
 
@@ -437,7 +469,7 @@ footer{
         padding-bottom: 10px;
     }
     .footer-logo img{
-        width: 40%;
+        width: 160px;
     }
     .footer-logo p{
         font-size: 100%;
