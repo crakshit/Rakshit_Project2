@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
 
 *{
     padding: 0;
@@ -10,11 +10,11 @@ body{
     background-color: #eee;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Spartan', sans-serif;
 }
 
 header{
-    background-color: #ffad19;
+    background-color: #4ac596;
     padding: 1em;
 }
 
@@ -24,13 +24,15 @@ header{
 
 nav{
     float: right;
-    padding-top: 0.5em;
+    padding-top: 1em;
 }
 
 nav a{
     padding: 0 3em 0 0;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
     color: #000;
 }
 
@@ -47,7 +49,7 @@ nav a{
 /* End of Navigation */
 
 main{
-    min-height: 600px;
+    min-height: 650px;
     padding-bottom: 5%;
 }
 
@@ -65,13 +67,13 @@ main{
 
 .main-text h1{
     text-transform: uppercase;
-    font-size: 2.3em;
-    letter-spacing: 0.09em;
+    font-size: 1.8em;
+    letter-spacing: 0.05em;
     word-spacing: 0.23em;
 }
 
 .main-text p{
-    padding: 1.2em 0;
+    padding: 1.3em 0;
     line-height: 1.5em;
 }
 
@@ -83,12 +85,12 @@ main{
     background-color: #306de0;
     color: #eee;
     border: none;
-    padding: 15px 25px;
-    font-size: 1em;
+    padding: 15px 20px;
+    font-size: 0.8em;
     text-transform: uppercase;
     cursor: pointer;
-    border-radius: 30px;
-    margin-top: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
     
 }
 
@@ -191,10 +193,11 @@ main{
 .table-data table{
     width: 80%;
     margin: auto;
+    border-collapse: collapse;
 }
 
 .table-data th{
-    background: #306de0;
+    background: #2350a3;
     color: #eee;
     font-weight: bold;
 }
@@ -209,11 +212,11 @@ main{
 }
 
 .table-data td:hover{
-    background-color: #4ac596;
+    background-color: #ACE4CF;
 }
 
 #year{
-    background-color: #306de0;
+    background-color: #2350a3;
     color: #eee;
 }
 
@@ -253,16 +256,8 @@ footer{
     text-decoration: none;
 }
 
-#follow{
-    font-size: 120%;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    padding-bottom: 10px;
-}
-
 .footer-social img{
-    width: 35px;
+    width: 40px;
     padding: 5px;
 }
 
@@ -283,7 +278,7 @@ footer{
     }
     nav{
         float: none;
-        padding: 1em 0 0 0;
+        padding: 1.5em 0 0 0;
         text-align: center;
     }
     nav a{
@@ -340,7 +335,8 @@ footer{
     nav a{
         display: block;
         text-align: center;
-        padding: 0;
+        padding: 10px;
+        
     }
     #logo{
         padding: 0;
@@ -389,7 +385,7 @@ footer{
         position: absolute;
         top: 6px;
         left: 6px;
-        width: 45%;
+        width: 48%;
         padding-right: 10px;
         white-space: nowrap;
         font-weight: bold;
@@ -397,8 +393,13 @@ footer{
 
     }
     
+    #year{
+        text-align: left;
+    }
+    
     .table-data td:nth-of-type(1)::before{
-        content: "Year"
+        content: "Year - ";
+        text-align: right;
     }
     .table-data td:nth-of-type(2)::before{
         content: "Facebook"
@@ -418,6 +419,10 @@ footer{
     .table-data td:nth-of-type(7)::before{
         content: "Google+"
     }
+    
+    caption{
+        display: block;
+    }
 
     /* End of Why (Table) */
     
@@ -429,7 +434,7 @@ footer{
         display: block;
         margin: auto;
         width: 90%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .footer-logo img{
         width: 40%;
