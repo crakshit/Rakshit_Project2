@@ -3,18 +3,18 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-image: url(img/Background.jpg);
-    background-color: #f8be02;
+    background-color: #eee;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
 
 header{
-    background-color: #f8be02;
+    background-color: #ffad19;
     padding: 1em;
 }
 
@@ -39,7 +39,7 @@ nav a{
     background-color: #f8be02;
     min-width: 900px;
 */
-    max-width: 1280px;
+/*    max-width: 1280px;*/
 /*    box-shadow: 5px 5px #4d4d4d;*/
     margin: auto;
 }
@@ -48,11 +48,19 @@ nav a{
 
 main{
     min-height: 600px;
+    padding-bottom: 5%;
 }
 
+#main-img{
+    float: left;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 5%;
+}
 
 .main-text{
-    padding: 10% 5% 0 35%;
+    padding: 10% 5% 0 1%;
+    overflow: hidden;
 }
 
 .main-text h1{
@@ -70,7 +78,23 @@ main{
 .main-text h3{
     font-size: 1.3em;
 }
-/* Button Pendind*/
+
+#main-button{
+    background-color: #306de0;
+    color: #eee;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px;
+    
+}
+
+#main-button:hover{
+    background-color: #2350a3;
+}
 /* End of Main */
 
 .services{
@@ -80,14 +104,14 @@ main{
 
 .container{
     display: inline-block;
-    width: 30%;
-    min-height: 500px;
+    width: 28%;
+    min-height: 680px;
     background-color: #fff;
-    padding: 5px;
-    margin: 10px;
+    padding: 2%;
+    margin: 2%;
     border-radius: 20px;
-    box-shadow: 5px 10px 15px #606060;
-    
+    box-shadow: 5px 5px 15px #606060;
+    vertical-align: top;
 }
 
 .photo{
@@ -109,7 +133,7 @@ main{
     padding: 10px 0;
     font-size: 150%;
     font-weight: 600;
-    letter-spacing: 0.1em;
+
 }
 
 .description .text{
@@ -119,7 +143,7 @@ main{
 }
 
 
-/* Start of Why (Table) */
+/* Start of Insights (Table) */
 
 .insights .content{
     margin: 4% auto 0 auto;
@@ -153,6 +177,13 @@ main{
 #para a{
     color: inherit;    
 }
+
+#para a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 .table-data{
     margin: 2% 0;
 }
@@ -163,8 +194,8 @@ main{
 }
 
 .table-data th{
-    background: #333;
-    color: white;
+    background: #306de0;
+    color: #eee;
     font-weight: bold;
 }
 
@@ -177,15 +208,64 @@ main{
     border: 1px solid #000;
 }
 
+.table-data td:hover{
+    background-color: #4ac596;
+}
+
+#year{
+    background-color: #306de0;
+    color: #eee;
+}
+
 /* End of Why (Table) */
 
 footer{
-    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    background-color: #4ac596;
 }
 
-.footer-logo img{
-    width: 50%;
+
+.footer-logo, .footer-text, .footer-social{
+    width: 33%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
 }
+.footer-logo img{
+    width: 30%;
+    padding-bottom: 10px;
+}
+.footer-logo p{
+    font-size: 80%;
+    
+}
+.footer-logo p span{
+    display: block;
+}
+.footer-text p{
+    font-size: 80%;
+}
+.footer-text a{
+    font-size: 80%;
+    color: inherit;
+    text-decoration: none;
+}
+
+#follow{
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.footer-social img{
+    width: 35px;
+    padding: 5px;
+}
+
 
 
 /*  Responsive at 1024px  */
@@ -215,6 +295,10 @@ footer{
     
     .main-text{
         padding: 5%;
+    }
+    
+    #main-img{
+        display: none;
     }
     
     /*End of Main @1024*/
@@ -336,5 +420,25 @@ footer{
     }
 
     /* End of Why (Table) */
+    
+    footer{
+        display: block;
+        padding-top: 20px;
+    }
+    .footer-logo, .footer-text, .footer-social{
+        display: block;
+        margin: auto;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .footer-logo img{
+        width: 40%;
+    }
+    .footer-logo p{
+        font-size: 100%;
+    }
+    .footer-social img{
+        
+    }
     
 }
