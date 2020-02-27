@@ -111,7 +111,7 @@ main{
 .container{
     display: inline-block;
     width: 28%;
-    min-height: 680px;
+    min-height: 720px;
     background-color: #fff;
     padding: 2%;
     margin: 2%;
